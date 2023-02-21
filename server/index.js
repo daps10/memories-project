@@ -6,12 +6,12 @@ import postRoutes from './routes/posts.js';
 
 const app = express();
 
-// routes
-app.use('/posts', postRoutes);
-
 // middlewares
 app.use(express.json({ limit: '50mb' }));
 app.use(cors());
+
+// routes
+app.use('/posts', postRoutes);
 
 const CONNECTION_URL= "mongodb+srv://daps:YpGY8a1Ow9rg5RZf@cluster0.nrn2f.mongodb.net/memoriesProject?retryWrites=true&w=majority";
 
