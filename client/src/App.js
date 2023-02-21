@@ -8,6 +8,8 @@ import {
 } from '@material-ui/core';
 
 import memories from './images/memories.jpg';
+import Posts from "./components/Posts/Posts";
+import Form from "./components/Form/Form";
 
 const App = () => {
     return (
