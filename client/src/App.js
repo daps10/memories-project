@@ -7,7 +7,7 @@ import {
     Grid 
 } from '@material-ui/core';
 
-import memories from './images/memories.jpg';
+import memories from './images/memories.png';
 import Posts from "./components/Posts/Posts";
 import Form from "./components/Form/Form";
 import useStyles from './styles';
