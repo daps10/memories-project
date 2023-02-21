@@ -1,7 +1,19 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-
+import { Provider } from 'react-redux';
+import { 
+    creatStore,
+    applyMiddleware,
+    compose,
+    compose
+} from 'redux';
+import thunk from 'redux-thunk';
 import App from './App';
+import reducers from './reducers'
+const store= creatStore(
+    reducers,
+    compose(applyMiddleware(thunk))
+);
 
 ReactDOM.render(
     <App />,
